@@ -21,7 +21,7 @@
     font-weight: bold;
   }
   span {
-    color: #fc04a9;
+    color: #FFD700;
   }
   .navbar ul {
     text-align: right;
@@ -69,7 +69,7 @@
     border-radius: 50%;
     margin-left: 107%;
     margin-top: -30%;
-    box-shadow: 0 0 90px #03fdf9, 0 0 40px #03fdf9;
+    box-shadow: 0 0 90px #03fdf9, 0 0 20px #03fdf9;
   }
   .circle span {
     position: absolute;
