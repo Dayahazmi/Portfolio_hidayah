@@ -2,41 +2,39 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css" /> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">Port<span>folio</span></div>
-        <div class="navbar">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>            
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
+    <header class="header">
+      <a href="#" class = "logo">Portfolio</a>
+
+      <nav class="navbar">
+        
+          <a href="#">Home</a>
+          <a href="#">About Me</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
       </nav>
-      <!-- text -->
-      <div class="text">
-        <h1>
-          Hi, I'm Hidayah <br />
-          Software <span>Engineer</span>
-        </h1>
-        <br>
-        <p>
-          A girl who love code more than everything but still love to read.
-        </p>
-        <a href="" class="btn">Télécharge mon CV</a>
-      </div>
-      <!-- cercle -->
-      <div class="circle">
-        <span>
-          <img src="" alt="" />
-        </span>
-      </div>
     </header>
+    <section class="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Hidayah Azmi</h1>
+        <h3>And I'm a <span class="text"></span></h3>       
+        <div class="home-sci">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-instagram' ></i></a>
+          <a href="#"><i class='bx bxl-linkedin' ></i></a>
+          <a href="#"><i class='bx bxl-github' ></i></a>
+        </div>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>
