@@ -57,7 +57,7 @@ body {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url('images/wallpaper-back.jpeg') no-repeat;
+  background: url('images/wallpaper.png') no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -155,9 +155,17 @@ body {
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: url('images/wallpaper-back.jpeg') no-repeat;
+  background: url('images/black-wallpaper.png') no-repeat;
   align-items: center;
   gap: 2rem;
+}
+
+.about-img img{
+  padding-bottom: 20%;
+  max-width: 630px;
+  height: 10%;
+  min-width: 5%;
+  border-radius: 8px;
 }
 
 .about-text h2{
