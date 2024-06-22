@@ -576,7 +576,7 @@ section{
   width: 90%;
   padding: 18px;
   background: #555557;
-  color: black;
+  color: white;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -586,6 +586,10 @@ section{
 .contact-form textarea{
   resize: none;
   height:  220px;
+}
+
+.contact-form form input::placeholder, textarea::placeholder{
+  color: #fff;
 }
 
 .contact-form form .send{
