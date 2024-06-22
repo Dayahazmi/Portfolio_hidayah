@@ -1,57 +1,210 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="stylesheet.css" /> 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class = "logo">Portfolio</a>
 
-      <nav class="navbar">        
-          <a href="#" style="--i:1"class="active">Home</a>
-          <a href="#" style="--i:2">About Me</a>
-          <a href="#" style="--i:3">Skill</a>
-          <a href="#" style="--i:4">Projects</a>
-          <a href="#" style="--i:5">Contact</a>
-      </nav>
-    </header>
-    <section class="home">
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Hidayah Azmi</h1>
-        <h3>And I'm a <span class="text"></span></h3>
-        <p>I am a passionate Software Engineer specializing in both web and mobile development. 
-          With a deep love for crafting elegant and efficient code, I thrive in creating seamless digital experiences.<br> 
-          My expertise spans a variety of technologies, including HTML, CSS, JavaScript, Flutter, and a touch of Python.</p>       
-        <div class="home-sci">
-          <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
-          <a href="#" style="--i:8"><i class='bx bxl-instagram' ></i></a>
-          <a href="#" style="--i:9"><i class='bx bxl-linkedin' ></i></a>
-          <a href="#" style="--i:10"><i class='bx bxl-github' ></i></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+
+    <nav class="navbar">
+      <a href="#home" style="--i:1" class="active">Home</a>
+      <a href="#about" style="--i:2">About Me</a>
+      <a href="#skill" style="--i:3">Skills</a>
+      <a href="#project" style="--i:4">Projects</a>
+      <a href="#contact" style="--i:5">Contact</a>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Hidayah Azmi</h1>
+      <h3>And I'm a <span class="text"></span></h3>
+      <p>I am a passionate Software Engineer specializing in both web and mobile development.
+        With a deep love for crafting elegant and efficient code, I thrive in creating seamless digital experiences.<br>
+        My expertise spans a variety of technologies, including HTML, CSS, JavaScript, Flutter, and a touch of Python.
+      </p>
+      <div class="home-sci">
+        <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+        <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+        <a href="#" style="--i:9"><i class='bx bxl-linkedin'></i></a>
+        <a href="#" style="--i:10"><i class='bx bxl-github'></i></a>
+      </div>
+      <a href="#" class="btn-box">More About Me</a>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/second_pic.png" alt="image" />
+    </div> <!-- Close the about-img div properly -->
+    <div class="about-text">
+      <h2>About<span> Me</span></h2>
+      <h4>Software Engineer</h4>
+      <p>I am a passionate Software Engineer specializing in both web and mobile development. With a deep love for
+        crafting elegant and efficient code, I thrive in creating seamless digital experiences.
+        My expertise spans a variety of technologies, including HTML, CSS, JavaScript, Flutter, and a touch of Python.
+        I am also a fan of the game of basketball. I love to play football and watch movies.</p>
+
+      <a href="#" class="btn-box">More About Me</a>
+    </div>
+  </section>
+
+  <section class="skills" id="skill">
+    <div class="services" id="services">
+      <div class="container">
+        <h1 class="sub-title">My <span>Services</span></h1>
+        <div class="services-list">
+          <div>
+            <i class='bx bx-code' style='color:#e6550b'></i>
+            <h2>Web Development</h2>
+            <p>Building scalable, secure, and efficient web applications using HTML, CSS, JavaScript, and other</p>
+            <a href="#" class="read">learn more</a>
+          </div>
+          <div>
+            <i class='bx bx-mobile-alt' style='color:#e25711'></i>
+            <h2>Mobile Development</h2>
+            <p>Building scalable, secure, and efficient web applications using HTML, CSS, JavaScript, and other</p>
+            <a href="#" class="read">learn more</a>
+          </div>
+          <div>
+            <i class='bx bx-mobile-alt' style='color:#e25711'></i>
+            <h2>UI/UX Design</h2>
+            <p>Building scalable, secure, and efficient web applications using HTML, CSS, JavaScript, and other</p>
+            <a href="#" class="read">learn more</a>
+          </div>
         </div>
-        <a href="#" class="btn-box">More About Me</a>
       </div>
-    </section>
-    <section class="about" id="about">
-      <div class="about-img"  >
-        <img src="images/second_pic.png" alt="image" />
-      <div class="about-text">
-        <h2>About<span>Me</span></h2>
-        <h4>Software Engineer</h4>
-        <p>I am a passionate Software Engineer specializing in both web and mobile development. 
-          With a deep love for crafting elegant and efficient code, I thrive in creating seamless digital experiences. 
-          My expertise spans a variety of technologies, including HTML, CSS, JavaScript, Flutter, and a touch of Python.
-          I am also a fan of the game of basketball. I love to play football and watch movies.</p>
+    </div>
+  </section>
+  <h1 class="sub-title">My <span>Skills</span></h1>
 
-          <a href="#" class="btn-box">More About Me</a>
+  <section>
+    <div class="container1" id="Skills">
+      <h1 class="heading">Technical Skills</h1>
+      <div class="Technical-bars">
+        <div class="bar"><i class='bx bxl-html5' style='color:#FFBF00'></i>
+          <div class="info">
+            <span>HTML</span>
+          </div>
+          <div class="progress-line html">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar"><i class='bx bxl-css3' style='color:#ffbf00'></i>
+          <div class="info">
+            <span>CSS</span>
+          </div>
+          <div class="progress-line css">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar"><i class='bx bxl-flutter' style='color:#ffbf00'></i>
+          <div class="info">
+            <span>Dart</span>
+          </div>
+          <div class="progress-line dart">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar"><i class='bx bxl-python' style='color:#ffbf00'></i>
+          <div class="info">
+            <span>Python</span>
+          </div>
+          <div class="progress-line python">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar"><i class='bx bxl-javascript' style='color:#ffbf00'></i>
+          <div class="info">
+            <span>Javascript</span>
+          </div>
+          <div class="progress-line javascript">
+            <span></span>
+          </div>
+        </div>
       </div>
-    </section>
-    <script src="main.js"></script>
-  </body>
+    </div>
+  </section>
+  <section>
+    <div id="portfolio" id="project">
+      <div class="main-text" id="project">
+        <h2>Latest <span>Project</span></h2>
+        <div class="portfolio-content">
+          <div class="row">
+            <img src="images/fyp.png">
+            <div class="layer">
+              <h5>Final Year Project</h5>
+              <p>Developed a web application using Flutter and Firebase for the final year project. The application is
+              </p>
+              <a href="#"><i class='bx bx-link-external' style="color: white;"></i></a>
+            </div>
+          </div>
+          <div class="row">
+            <img src="images/fyp.png">
+            <div class="layer">
+              <h5>Final Year Project</h5>
+              <p>Developed a web application using Flutter and Firebase for the final year project. The application is
+              </p>
+              <a href="#"><i class='bx bx-link-external' style="color: white;"></i></a>
+            </div>
+          </div>
+          <div class="row">
+            <img src="images/fyp.png">
+            <div class="layer">
+              <h5>Final Year Project</h5>
+              <p>Developed a web application using Flutter and Firebase for the final year project. The application is
+              </p>
+              <a href="#"><i class='bx bx-link-external' style="color: white;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Contact <span>Me</span></h2>
+      <h4>Let's Work Together</h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Optio amet autem quo molestias accusamus ut doloremque nihil iusto dolore,
+        in perferendis voluptatem iste, non quaerat nostrum vel eveniet qui debitis?</p>
+      <div class="contact-list">
+        <li><i class='bx bx-mail-send' style='color:#fff'></i> dayah.idami@gmail.com</li>
+        <li><i class='bx bxs-phone' style='color:#fff'></i></i> 01125411249</li>
+      </div>
+      <div class="contact-icon">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form action="">
+        <input type="text" placeholder="Enter Your Name" required>
+        <input type="email" placeholder="Email Your Email" required>
+        <input type="" placeholder="Enter Your Subject">
+        <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+        <input type="submit" value="submit" class="send">
+      </form>
+    </div>
+  </section>
+  <div class="last-text">
+    <p>&copy; 2022 Dayah Idami. All Rights Reserved.</p>
+  </div>
+  <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
