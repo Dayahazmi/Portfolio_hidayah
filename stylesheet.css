@@ -414,8 +414,8 @@ section{
 .portfolio-content {  
   display: flex;  
   grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
-  gap: 20px; /* Add some gap between the images */
-  padding: 20px; /* Add some padding around the images */
+  gap: 20px; 
+  padding: 20px; 
   margin-top: 60px;
   text-align: center;
 }
@@ -464,6 +464,14 @@ section{
   color: black;
   font-size: 1rem;
   line-height: 1.8;
+  text-align: justify;
+}
+
+.layer p2{
+  color: black;
+  font-size: 1rem;
+  line-height: 2.0;
+  text-align: justify;
 }
 
 .layer i{
@@ -479,9 +487,7 @@ section{
   border-radius: 50%;
 }
 
-.row:hover img {
-  transform: scale(1.1);
-}
+
 
 .row:hover .layer {
   height: 100%;
@@ -682,3 +688,96 @@ section{
   }
 }
 
+@media only screen and (max-width: 768px) {
+  /* Adjustments for tablets and smaller devices */
+  .header {
+    padding: 20px 5%;
+  }
+
+  .navbar a {
+    margin-left: 20px;
+  }
+
+  .home-content {
+    padding: 50px 5%;
+  }
+
+  .home-content h3 {
+    font-size: 24px;
+  }
+
+  .home-content h1 {
+    font-size: 40px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .home-sci a {
+    margin: 20px 10px;
+  }
+
+  .btn-box {
+    padding: 10px 20px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 2rem 5%;
+  }
+
+  .about-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-text h2 {
+    font-size: 40px;
+  }
+
+  .services-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .services-list div {
+    padding: 30px;
+  }
+
+  .main-text h2 {
+    font-size: 40px;
+  }
+
+  .portfolio-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .row img {
+    width: 100%;
+  }
+
+  .layer {
+    padding: 20px;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 5%;
+  }
+
+  .contact-text h2 {
+    font-size: 60px;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
+  .last-text p {
+    padding: 15px 0;
+    font-size: 14px;
+  }
+}
