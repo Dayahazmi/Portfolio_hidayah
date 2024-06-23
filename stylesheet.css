@@ -465,6 +465,7 @@ section{
   font-size: 1rem;
   line-height: 1.8;
   text-align: justify;
+  
 }
 
 .layer p2{
@@ -485,6 +486,7 @@ section{
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  
 }
 
 
@@ -756,6 +758,10 @@ section{
 
   .row img {
     width: 100%;
+  }
+
+  .layer p{
+    font-size: 10px;
   }
 
   .layer {
