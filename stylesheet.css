@@ -718,6 +718,14 @@ section{
     font-size: 10px;
   }
 
+  .layer h5{
+    font-size: 10px;
+  }
+
+  .layer p2{
+    font-size: 5px;
+  }
+
   .layer {
     padding: 20px;
   }
