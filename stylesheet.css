@@ -639,7 +639,7 @@ textarea::placeholder {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   /* Adjustments for tablets and smaller devices */
   .header {
     padding: 20px 5%;
@@ -712,7 +712,7 @@ textarea::placeholder {
   .layer p {
     font-size: 15px;
   }
-  
+
   .layer {
     width: 100%;
     height: 0;
