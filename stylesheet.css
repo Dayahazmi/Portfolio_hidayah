@@ -8,7 +8,7 @@
 
 body {
   color: white;
-  background: black;
+  background: #051912;
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: #c5832b;
+  background: #f0ecea;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,8 +56,7 @@ body {
   position: relative;
   width: 100%;
   justify-content: space-between;
-  height: 100vh;
-  background: url("images/wallpaper.png") no-repeat;
+  height: 100vh;  
   background-size: cover;
   background-position: center;
   display: flex;
@@ -84,7 +83,7 @@ body {
 }
 
 .home-content h3 span {
-  color: #c5832b;
+  color: #dcd8c7;
 }
 
 .home-content h1 {
@@ -111,7 +110,7 @@ body {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #c5832b;
+  border: 2px solid #dcd8c7;
   border-radius: 50%;
   font-size: 20px;
   color: white;
@@ -126,13 +125,13 @@ body {
 .home-sci a:hover {
   background: white;
   color: #081b08;
-  box-shadow: 0 0 20px #c5832b;
+  box-shadow: 0 0 10px #f0ecea;
 }
 
 .btn-box {
   display: inline-block;
   padding: 12px 28px;
-  background: #c5832b;
+  background: #dcd8c7;
   border-radius: 40px;
   font-size: 16px;
   letter-spacing: 1px;
@@ -141,7 +140,7 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #c5832b, 0 0 25px #c5832b;
+  
 }
 
 .btn-box:hover {
@@ -154,7 +153,7 @@ body {
   display: flex;
   grid-template-columns: repeat(1, 1fr);
   flex-direction: row;
-  background: url("images/black-wallpaper.png") no-repeat center center/cover;
+  
   align-items: center;
   gap: 1rem;
   padding: 2rem;
@@ -182,7 +181,7 @@ body {
 }
 
 .about-text h2 span {
-  color: #c5832b;
+  color: #051912;
 }
 
 .about-text h4 {
@@ -203,7 +202,7 @@ body {
 
 /*my services*/
 #services {
-  color: #fff;
+  color: #dcd8c7;
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
@@ -238,7 +237,8 @@ body {
   border-right: 10px;
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
-  box-shadow: 1px 1px 20px #c5832b, 1px 1px 40px #c5832b;
+  border-left: 10px solid #f0ecea;
+  
 }
 
 .services-list div i {
@@ -247,9 +247,16 @@ body {
 }
 
 .services-list div h2 {
+  color: #fff;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
+}
+
+.services-list div p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .services-list div a {
@@ -258,27 +265,6 @@ body {
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
-}
-
-.read {
-  display: inline-block;
-  padding: 12px 28px;
-  background: #c5832b;
-  border-radius: 40px;
-  font-size: 16px;
-  color: #c5832b;
-  letter-spacing: 1px;
-  text-decoration: none;
-  font-weight: 600;
-  opacity: 0;
-  animation: slideTop 1s ease forwards;
-  animation-delay: 2s;
-  box-shadow: 0 0 5px #c5832b, 0 0 25px #c5832b;
-}
-
-.read:hover {
-  box-shadow: 0 0 20px #c5832b, 0 0 25px #c5832b, 0 0 50px #c5832b,
-    0 0 100px #c5832b, 0 0 200px #c5832b;
 }
 
 .services-list div:hover {
@@ -306,48 +292,6 @@ section {
   margin-bottom: 50px;
 }
 
-.bar {
-  font-size: 23px;
-}
-
-.Technical-bars .bar {
-  margin-top: 40px 0;
-}
-
-.Technical-bars .bar:first-child {
-  margin-top: 0;
-}
-
-.Technical-bars .bar:last-child {
-  margin-top: 0;
-}
-
-.Technical-bars .bar .info {
-  margin-bottom: 5px;
-}
-
-.Technical-bars .bar .info span {
-  font-size: 17px;
-  font-weight: 500;
-  animation: showtext 0.5s 1s linear forwards;
-  opacity: 0;
-}
-
-.Technical-bars .bar .progress-line {
-  position: relative;
-  border-radius: 10px;
-  width: 100%;
-  height: 5px;
-  background-color: #c5832b;
-  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
 
 /*portfolio*/
 .main-text {
@@ -361,7 +305,7 @@ section {
 }
 
 .main-text h2 span {
-  color: #c5832b;
+  color: #dcd8c7;
 }
 
 .portfolio-content {
@@ -461,7 +405,7 @@ section {
 }
 
 .contact-text h2 span {
-  color: #c5832b;
+  color: #dcd8c7;
 }
 
 .contact-text h4 {
@@ -505,10 +449,10 @@ section {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #c5832b;
+  border: 2px solid #dcd8c7;
   border-radius: 50%;
   font-size: 20px;
-  color: #c5832b;
+  color: #dcd8c7;
   text-decoration: none;
   margin: 30px 15px 30px 0;
   transition: 0.5s ease;
@@ -518,9 +462,9 @@ section {
 }
 
 .contact-icon i:hover {
-  background: #c5832b;
+  background: #dcd8c7;
   color: #fff;
-  box-shadow: 0 0 20px #c5832b;
+  box-shadow: 0 0 10px #f0ecea;
 }
 
 .contact-form form {
@@ -533,7 +477,7 @@ form textarea {
   outline: none;
   width: 90%;
   padding: 18px;
-  background: #555557;
+  background: #dcd8c7;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -548,13 +492,13 @@ form textarea {
 
 .contact-form form input::placeholder,
 textarea::placeholder {
-  color: #fff;
+  color: black;
 }
 
 .contact-form form .send {
   display: inline-block;
   padding: 12px 28px;
-  background: #c5832b;
+  background: #dcd8c7;
   border-radius: 40px;
   font-size: 16px;
   color: black;
@@ -564,12 +508,11 @@ textarea::placeholder {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #c5832b, 0 0 25px #c5832b;
+  
 }
 
 .contact-form form .send:hover {
-  box-shadow: 0 0 20px #c5832b, 0 0 25px #c5832b, 0 0 50px #c5832b,
-    0 0 100px #c5832b, 0 0 200px #c5832b;
+  box-shadow: 0 0 10px #f0ecea,
 }
 
 .last-text p {
