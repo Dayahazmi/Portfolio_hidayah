@@ -16,7 +16,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 10px 5%;
   background: #f0ecea;
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,7 @@ body {
 }
 
 .navbar a:hover {
-  color: white;
+  color: #051912;
 }
 
 .home {
@@ -61,7 +61,7 @@ body {
   background-position: center;
   display: flex;
   align-items: center;
-  padding: 70px 10% 0;
+  padding: 50px 5% 0;
 }
 
 .home-content {
@@ -122,8 +122,7 @@ body {
   animation-delay: calc(0.2s * var(--i));
 }
 
-.home-sci a:hover {
-  background: white;
+.home-sci a:hover {  
   color: #081b08;
   box-shadow: 0 0 10px #f0ecea;
 }
@@ -152,16 +151,15 @@ body {
 .about {
   display: flex;
   grid-template-columns: repeat(1, 1fr);
-  flex-direction: row;
-  
+  flex-direction: row;  
   align-items: center;
   gap: 1rem;
-  padding: 2rem;
+  padding: 25px 2.5% 0;
 }
 
 .about-img {
   flex: 1;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -264,7 +262,7 @@ body {
   color: white;
   font-size: 12px;
   margin-top: 20px;
-  display: inline-block;
+  display: flex;
 }
 
 .services-list div:hover {
@@ -280,7 +278,7 @@ section {
 .container1 {
   width: 600px;
   height: 500px;
-  padding: 75px 90px;
+  padding: 20px 20px;
   margin-left: 120px;
 }
 
@@ -295,7 +293,7 @@ section {
 
 /*portfolio*/
 .main-text {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .main-text h2 {
@@ -312,7 +310,7 @@ section {
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
   gap: 20px;
-  padding: 20px;
+  padding: 5px;
   margin-top: 60px;
   text-align: center;
 }
@@ -328,7 +326,7 @@ section {
 .row img {
   width: 100%;
   border-radius: 8px;
-  display: block;
+  display: fle;
   transition: transform 0.5s;
 }
 
@@ -346,7 +344,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 40px;
+  padding: 0 20px;
   transition: height 0.5s;
 }
 
@@ -462,7 +460,7 @@ section {
 }
 
 .contact-icon i:hover {
-  background: #dcd8c7;
+  
   color: #fff;
   box-shadow: 0 0 10px #f0ecea;
 }
@@ -478,7 +476,7 @@ form textarea {
   width: 90%;
   padding: 18px;
   background: #dcd8c7;
-  color: white;
+  color: black;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -496,7 +494,7 @@ textarea::placeholder {
 }
 
 .contact-form form .send {
-  display: inline-block;
+  display: flexbox;
   padding: 12px 28px;
   background: #dcd8c7;
   border-radius: 40px;
@@ -518,11 +516,12 @@ textarea::placeholder {
 .last-text p {
   width: 100%;
   text-align: center;
-  padding: 25px 0;
-  background: rgb(235, 211, 107);
-  font-weight: 300;
+  padding: 15px 0;
+  background: #f0ecea;
+  font-weight: 600;
   margin-top: 70px;
   color: black;
+  display: flex;
 }
 
 .top {
@@ -532,8 +531,8 @@ textarea::placeholder {
 }
 
 .top i {
-  color: white;
-  background: #c5832b;
+  color: #051912;
+  background: #f0ecea;
   font-size: 20px;
   padding: 10px;
   border-radius: 0.5rem;

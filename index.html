@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Hidayah Azmi</title>
   <link rel="stylesheet" href="stylesheet.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,9 +35,8 @@
         My expertisement spans within various technologies: <br> <br> Flutter, Python, Web Stack (HTML/CSS/JavaScript).
       </p>
       <div class="home-sci">
-
-        <a href="#" style="--i:9"><i class='bx bxl-linkedin' style="color: black;"></i></a>
-        <a href="https://github.com/ShijiroHikiro" style="--i:10"><i class='bx bxl-github'style="color: black;"></i></a>
+        <a href="#" style="--i:9"><i class='bx bxl-linkedin' style="color: white;"></i></a>
+        <a href="https://github.com/ShijiroHikiro" style="--i:10"><i class='bx bxl-github' style="color: white;"></i></a>
       </div>
       <a href="#about" class="btn-box " style="color: black;">More About Me</a>
     </div>
@@ -69,10 +68,8 @@
           <div>
             <i class='bx bx-mobile-alt' style='color:#dcd8c7'></i>
             <h2>Mobile Development</h2>
-            <p>Building scalable, secure, and efficient web applications using HTML, CSS, JavaScript, and other</p>
-           
+            <p>Building scalable, secure, and efficient web applications using HTML, CSS, JavaScript, and other</p>           
           </div>
-
         </div>
       </div>
     </div>
@@ -110,8 +107,6 @@
     </div>
   </section>
 
-
-
   <section class="contact" id="contact">
     <div class="contact-text">
       <h2>Contact <span>Me</span></h2>
@@ -120,20 +115,20 @@
       </p>
       <div class="contact-list">
         <li><i class='bx bx-mail-send' style='color:#fff'></i> dayah.idami@gmail.com</li>
-        <li><i class='bx bxs-phone' style='color:#fff'></i></i> +601125411249</li>
+        <li><i class='bx bxs-phone' style='color:#fff'></i> +601125411249</li>
       </div>
       <div class="contact-icon">
-        <a href="#"><i class='bx bxl-linkedin' style="color: black"></i></a>
-        <a href="https://github.com/ShijiroHikiro"><i class='bx bxl-github' style="color: black"></i></a>
+        <a href="#"><i class='bx bxl-linkedin' style="color: white"></i></a>
+        <a href="https://github.com/ShijiroHikiro"><i class='bx bxl-github' style="color: white"></i></a>
       </div>
     </div>
 
     <div class="contact-form">
-      <form action="">
-        <input type="text" placeholder="Enter Your Name" required>
-        <input type="email" placeholder="Email Your Email" required>
-        <input type="" placeholder="Enter Your Subject">
-        <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Enter Your Name" required>
+        <input type="email" id="email" placeholder="Enter Your Email" required>
+        <input type="text" id="subject" placeholder="Enter Your Subject">
+        <textarea id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
         <input type="submit" value="Submit" class="send">
       </form>
     </div>
@@ -143,6 +138,40 @@
   </div>
   <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyADO_6l3hMIzfFLxtytFsOAFcoM8ypwhYI",
+      authDomain: "sotm-6b71e.firebaseapp.com",
+      databaseURL: "https://sotm-6b71e.firebaseio.com",
+      projectId: "sotm-6b71e",
+      storageBucket: "sotm-6b71e.appspot.com",
+      messagingSenderId: "625690017569",
+      appId: "1:625690017569:web:5c0cd6817ffe6499c5c860"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      set(ref(db, "users/" + document.getElementById("name").value), {
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+      })
+      .then(() => {
+        alert("Your message has been sent!");
+      })
+      .catch((error) => {
+        alert("Error: " + error);
+      });
+    });
+  </script>
   <script src="main.js"></script>
 </body>
 
