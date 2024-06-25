@@ -517,10 +517,10 @@ textarea::placeholder {
   width: 100%;
   text-align: center;
   padding: 15px 0;
-  background: #f0ecea;
+  background: transparent;
   font-weight: 600;
   margin-top: 70px;
-  color: black;
+  color: rgba(255, 255, 255, 0.432);
   display: flex;
 }
 
