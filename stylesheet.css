@@ -438,7 +438,7 @@ section{
 .layer {   
   width: 100%;
   height: 0;
-  background: white; /* Example gradient */
+  background: linear-gradient(rgba(228, 222, 209, 0.5), rgb(255, 255, 254)); /* Example gradient */
   position: absolute;
   border-radius: 8px;
   left: 0;
@@ -464,6 +464,7 @@ section{
   color: black;
   font-size: 1rem;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .layer i{
