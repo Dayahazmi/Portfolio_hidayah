@@ -231,7 +231,7 @@ body {
 }
 
 .container {  
-  padding: 120px;
+  padding: 80px;
   justify-content: center;
   text-align: justify;
 }
@@ -324,7 +324,7 @@ section {
 
 .portfolio-content {  
  position: relative;
- width: 1400px;
+ width: 1200px;
  display: flex;
  justify-content: center;
  align-items: center;
