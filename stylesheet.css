@@ -1,5 +1,4 @@
-*
-* {
+* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,7 +57,7 @@ body {
   position: relative;
   width: 100%;
   justify-content: space-between;
-  height: 100vh;  
+  height: 100vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -68,9 +67,9 @@ body {
 }
 
 .home-img img {
-  width: 300px;  
-  height: 400px; 
-  object-fit: cover; 
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
 }
 
 .home-img {
@@ -138,7 +137,7 @@ body {
   animation-delay: calc(0.2s * var(--i));
 }
 
-.home-sci a:hover {  
+.home-sci a:hover {
   color: #081b08;
   box-shadow: 0 0 10px #f0ecea;
 }
@@ -155,15 +154,13 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  
 }
-
 
 /*about*/
 .about {
   display: flex;
   grid-template-columns: repeat(1, 1fr);
-  flex-direction: row;  
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   padding: 25px 2.5% 0;
@@ -230,7 +227,7 @@ body {
   color: #f0ecea;
 }
 
-.container {  
+.container {
   padding: 80px;
   justify-content: center;
   text-align: justify;
@@ -252,7 +249,6 @@ body {
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
   border-left: 10px solid #f0ecea;
-  
 }
 
 .services-list div i {
@@ -305,89 +301,6 @@ section {
   text-decoration-thickness: 5px;
   margin-bottom: 50px;
 }
-
-
-/*portfolio*/
-.main-text {
-  padding-top: 10px;  
-}
-
-.main-text h2 {
-  font-size: 60px;
-  line-height: 1;
-  text-align: center;  
-}
-
-.main-text h2 span {
-  color: #f0ecea;
-}
-
-.portfolio-content {  
- position: relative;
- width: 1200px;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-wrap: wrap; 
- margin-top: 4%;
-}
-
-.portfolio-content .row {
-  width: 500px;
-  position: relative;
-  height: 600px;
-  background: #f0f0f0;
-  margin: 40px 10px;
-  padding: 0px 15px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0.5px 10px #e6e6e6;
-  transition: 0.3s ease-in-out;
-  margin-top: 5%;
-}
-
-.row img {
-  width: 100%;
-  border-radius: 8px;
-  display: flex;
-  transition: transform 0.5s;
-}
-
-.layer h5{
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.layer p{
-  color: black;
-  font-size: 1rem;
-  line-height: 1.8;
-  text-align: justify;
-}
-
-.layer i{
-  color: #fff;
-  margin-top: 20px;
-  font-size: 20px;
-  background: #f0ecea;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.row:hover img {
-  transform: scale(1.1);
-}
-
-.row:hover .layer {
-  height: 100%;
-}
-
 /*contact*/
 .contact {
   display: grid;
@@ -462,7 +375,6 @@ section {
 }
 
 .contact-icon i:hover {
-  
   color: #fff;
   box-shadow: 0 0 10px #f0ecea;
 }
@@ -508,11 +420,10 @@ textarea::placeholder {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  
 }
 
 .contact-form form .send:hover {
-  box-shadow: 0 0 10px #f0ecea,
+  box-shadow: 0 0 10px #f0ecea;
 }
 
 .last-text p {
@@ -540,6 +451,90 @@ textarea::placeholder {
   border-radius: 0.5rem;
 }
 
+/*project page*/
+
+.main-text {
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.main-text h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+  font-size: 60px;
+}
+
+.main-text h2 span {
+  color: #f0ecea;
+}
+
+.portfolio-content {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4%;
+}
+
+.portfolio-content .row {
+  width: 500px;
+  position: relative;
+  height: 600px;
+  background: #f0f0f0;
+  margin: 40px 10px;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.5px 10px #e6e6e6;
+  transition: 0.3s ease-in-out;
+  margin-top: 5%;
+}
+
+.row img {
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.layer h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.layer p {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.layer i {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 20px;
+  background: #f0ecea;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.row:hover img {
+  transform: scale(1.1);
+}
+
+.row:hover .layer {
+  height: 100%;
+}
 @keyframes slideRight {
   0% {
     opacity: 0;
@@ -584,7 +579,6 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 700px) {
-  
   .header {
     padding: 20px 5%;
   }
@@ -694,4 +688,3 @@ textarea::placeholder {
     font-size: 14px;
   }
 }
-
