@@ -12,53 +12,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="index.html" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About Me</a>
-            <a href="#skill" style="--i:3">Skills</a>
-            <a href="project.html" style="--i:4">Projects</a>
-            <a href="#contact" style="--i:5">Contact</a>
-        </nav>
+    <header class="flex items-center justify-center py-4 mb-4 sticky top-0 z-10 bg-neutral-100">
+        <a href="index.html" class="logo text-black px-32 ">Portfolio</a>
+        <ul class="flex flex-row justify-between items-center lg:text-lg md:text-md text-sm font-base text-black w-full lg:px-32 px-10">
+            <li><a href="index.html" style="--i:1" class="active">Home</a></li>
+            <li><a href="#about" style="--i:2">About Me</a></li>
+            <li><a href="#skill" style="--i:3">Skills</a></li>
+            <li><a href="project.html" style="--i:4">Projects</a></li>
+            <li><a href="#contact" style="--i:5">Contact</a></li>
+        </ul>
     </header>
-     <section>
-    <div id="portfolio" id="project">
-      <div class="main-text" id="project">
-        <h2><span>Project</span></h2>
-        <div class="portfolio-content">
-          <div class="row">
-            <div class="layer">
-              <img src="images/mobile_app.png" alt="Mobile Application">
-              <br>
-              <h5>Mobile Application</h5>
-              <p>Developed a mobile application using Flutter framework for the frontend and Nodejs as backend</p>
-              <br>
-              <p>Status: Deployment</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="layer">
-              <img src="images/Picture1.png" alt="Machine Learning For Flood Monitoring & Alert System">
-              <br>
-              <h5>Machine Learning For Flood Monitoring & Alert System</h5>
-              <p>The main purpose of the project is to prevent flash floods caused by rain.
-                The technology used in this project is artificial intelligence, where machine learning users are
-                K-Nearest Neighbour (KNN) and Decision Tree (DT).
-              </p>
-              <br>
-              <p>Status: Finish</p>
-              <a href="https://github.com/ShijiroHikiro/FYP-Machine-Learning"><i class='bx bxl-github'
-                  style="color: black;"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <main class="mx-auto w-full flex flex-col items-center  px-10 md:px-20 mb-20">
+      <h1 class="text-white text-xl mt-10">My real and dummy projects</h1>
+      <section class="w-full mt-4">
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2"></ul>
+
+      </section>     
+    </main>
 </body>
 
 </html>
