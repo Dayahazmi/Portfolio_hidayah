@@ -16,15 +16,16 @@
 </head>
 
 <body>
-  <header class="flex flex-col md:flex-row items-center justify-between py-2 mb-4 sticky top-0 z-10 bg-gradient-to-b from-[#f0ecea] via-[#f0ecea] to-[#f0ecea] md:py-2">
+  <header
+    class="flex flex-col md:flex-row items-center justify-between py-2 mb-4 sticky top-0 z-10 bg-gradient-to-b from-[#f0ecea] via-[#f0ecea] to-[#f0ecea] md:py-2">
     <a href="index.html" class="logo text-black px-32 ">Portfolio</a>
     <ul
       class="flex flex-row justify-between items-center lg:text-lg md:text-md text-sm font-base text-black w-full lg:px-32 px-10">
-      <li><a href="index.html" style="--i:1" class="active">Home</a></li>
-      <li><a href="#about" style="--i:2">About Me</a></li>
-      <li><a href="#skill" style="--i:3">Skills</a></li>
-      <li><a href="project.html" style="--i:4">Projects</a></li>
-      <li><a href="contactMe.html" style="--i:5">Contact</a></li>
+      <li class="mb-2 md:mb-0 md:mr-6"><a href="index.html" style="--i:1" class="active">Home</a></li>
+      <li class="mb-2 md:mb-0 md:mr-6"><a href="aboutme.html" style="--i:2">About Me</a></li>
+      <li class="mb-2 md:mb-0 md:mr-6"><a href="skills.html" style="--i:3">Skills</a></li>
+      <li class="mb-2 md:mb-0 md:mr-6"><a href="project.html" style="--i:4">Projects</a></li>
+      <li class="mb-2 md:mb-0"><a href="contactMe.html" style="--i:5">Contact</a></li>
     </ul>
   </header>
   <main class="mx-auto w-full flex flex-col items-center px-5 md:px-20 mb-20">
@@ -33,7 +34,8 @@
       <div class="border-2 border-white-200 bf-gray-800 p-4 rounded-lg shadow-lg">
         <img src="images/mobile_app.png" alt="Mobile Application" class="rounded-t-lg mb-4">
         <h3 class="text-xl font-semibold mb-2">Mobile Application</h3>
-        <p class="text-gray-400">Developed a mobile application using Flutter framework for the frontend and Nodejs as backend</p>
+        <p class="text-gray-400">Developed a mobile application using Flutter framework for the frontend and Nodejs as
+          backend</p>
         <ul class="list-disc pl-5 mb-4 mt-1">
           <li>Flutter</li>
           <li>Nodejs</li>
@@ -41,7 +43,7 @@
         </ul>
         <div class="flex space-x-2">
           <a href="#" class="text-blue-500 hover:text-blue-400">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">              
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
             </svg>
           </a>
         </div>
@@ -58,11 +60,14 @@
           <li>CSS</li>
           <li>JavaScript</li>
           <li>Python</li>
-          <li>Machine Learning</li>          
+          <li>Machine Learning</li>
         </ul>
         <div class="flex space-x-2">
           <a href="https://github.com/ShijiroHikiro/FYP-Machine-Learning" class="text-neutral-100 hover:text-blue-400">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.607-4.042-1.607-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.775.42-1.305.763-1.605-2.665-.305-5.467-1.332-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.536-1.527.118-3.177 0 0 1.008-.323 3.3 1.23.957-.266 1.983-.399 3.005-.404 1.022.005 2.048.138 3.005.404 2.29-1.553 3.297-1.23 3.297-1.23.656 1.65.244 2.874.12 3.177.77.84 1.235 1.91 1.235 3.22 0 4.61-2.806 5.624-5.478 5.921.43.372.824 1.102.824 2.222 0 1.606-.014 2.902-.014 3.293 0 .322.216.694.824.577 4.765-1.587 8.199-6.083 8.199-11.384 0-6.627-5.373-12-12-12z"/></svg>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.607-4.042-1.607-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.775.42-1.305.763-1.605-2.665-.305-5.467-1.332-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.536-1.527.118-3.177 0 0 1.008-.323 3.3 1.23.957-.266 1.983-.399 3.005-.404 1.022.005 2.048.138 3.005.404 2.29-1.553 3.297-1.23 3.297-1.23.656 1.65.244 2.874.12 3.177.77.84 1.235 1.91 1.235 3.22 0 4.61-2.806 5.624-5.478 5.921.43.372.824 1.102.824 2.222 0 1.606-.014 2.902-.014 3.293 0 .322.216.694.824.577 4.765-1.587 8.199-6.083 8.199-11.384 0-6.627-5.373-12-12-12z" />
+            </svg>
           </a>
         </div>
       </div>
@@ -72,16 +77,22 @@
         <p class="text-gray-400">Website show all social media links</p>
         <ul class="list-disc pl-5 mb-4 mt-1">
           <li>HTML</li>
-          <li>Tailwind</li>               
+          <li>Tailwind</li>
         </ul>
         <div class="flex space-x-2">
           <a href="https://github.com/ShijiroHikiro/Project_Groceries" class="text-neutral-100 hover:text-blue-400">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.607-4.042-1.607-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.775.42-1.305.763-1.605-2.665-.305-5.467-1.332-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.536-1.527.118-3.177 0 0 1.008-.323 3.3 1.23.957-.266 1.983-.399 3.005-.404 1.022.005 2.048.138 3.005.404 2.29-1.553 3.297-1.23 3.297-1.23.656 1.65.244 2.874.12 3.177.77.84 1.235 1.91 1.235 3.22 0 4.61-2.806 5.624-5.478 5.921.43.372.824 1.102.824 2.222 0 1.606-.014 2.902-.014 3.293 0 .322.216.694.824.577 4.765-1.587 8.199-6.083 8.199-11.384 0-6.627-5.373-12-12-12z"/></svg>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.607-4.042-1.607-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.775.42-1.305.763-1.605-2.665-.305-5.467-1.332-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.536-1.527.118-3.177 0 0 1.008-.323 3.3 1.23.957-.266 1.983-.399 3.005-.404 1.022.005 2.048.138 3.005.404 2.29-1.553 3.297-1.23 3.297-1.23.656 1.65.244 2.874.12 3.177.77.84 1.235 1.91 1.235 3.22 0 4.61-2.806 5.624-5.478 5.921.43.372.824 1.102.824 2.222 0 1.606-.014 2.902-.014 3.293 0 .322.216.694.824.577 4.765-1.587 8.199-6.083 8.199-11.384 0-6.627-5.373-12-12-12z" />
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </main>
+  <footer class="footer flex justify-center items-center">
+    <p>Developed by Hidayah Azmi 2024</p>
+  </footer>
 </body>
 
 </html>
