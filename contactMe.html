@@ -13,88 +13,87 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  
 </head>
 
 <body>
-  <header
-    class="flex flex-col md:flex-row items-center jsutify-between py-2 mb-4 sticky top-0 z-10 bg-gradient-to-b from-[#f0ecea] via-[#f0ecea] to-[#f0ecea] md:py-2">
+  <header class="flex flex-col md:flex-row items-center jsutify-between py-2 mb-4 sticky top-0 z-10 bg-gradient-to-b from-[#f0ecea] via-[#f0ecea] to-[#f0ecea] md:py-2">
     <a href="index.html" class="logo text-black px-32 ">Portfolio</a>
     <ul
-      class="flex flex-row justify-between items-center lg:text-lg md:text-md text-sm font-base text-black w-full lg:px-32 px-10">
-      <li class="mb-2 md:mb-0 md:mr-6"><a href="index.html" style="--i:1" class="active">Home</a></li>
-      <li class="mb-2 md:mb-0 md:mr-6"><a href="aboutme.html" style="--i:2">About Me</a></li>
-      <li class="mb-2 md:mb-0 md:mr-6"><a href="skills.html" style="--i:3">Skills</a></li>
-      <li class="mb-2 md:mb-0 md:mr-6"><a href="project.html" style="--i:4">Projects</a></li>
-      <li class="mb-2 md:mb-0"><a href="contactMe.html" style="--i:5">Contact</a></li>
+    class="flex flex-row justify-between items-center lg:text-lg md:text-md text-sm font-base text-black w-full lg:px-32 px-10">
+    <li class="mb-2 md:mb-0 md:mr-6"><a href="index.html" style="--i:1" class="active">Home</a></li>
+    <li class="mb-2 md:mb-0 md:mr-6"><a href="aboutme.html" style="--i:2">About Me</a></li>
+    <li class="mb-2 md:mb-0 md:mr-6"><a href="skills.html" style="--i:3">Skills</a></li>
+    <li class="mb-2 md:mb-0 md:mr-6"><a href="project.html" style="--i:4">Projects</a></li>
+    <li class="mb-2 md:mb-0"><a href="contactMe.html" style="--i:5">Contact</a></li>
     </ul>
   </header>
-  <main class="mx-auto w-full flex flex-col items-center px-5 md:px-20 mb-20">
-
+  <main class="mx-auto w-full p-3 flex flex-col items-center px-5 md:px-20 mb-20">    
     <section class="contact" id="contact">
-      <div class="contact-text">
-        <h2>Contact <span>Me</span></h2>
-        <h4>Let's Work Together</h4>
-        <p> If you have any questions, concerns, or need assistance, please do not hesitate to contact me.
-        </p>
-        <div class="contact-list">
-          <li><i class='bx bx-mail-send' style='color:#fff'></i> dayah.idami@gmail.com</li>
-          <li><i class='bx bxs-phone' style='color:#fff'></i> +601125411249</li>
+        <div class="contact-text">
+          <h2>Contact <span>Me</span></h2>
+          <h4>Let's Work Together</h4>
+          <p> If you have any questions, concerns, or need assistance, please do not hesitate to contact me.
+          </p>
+          <div class="contact-list">
+            <li><i class='bx bx-mail-send' style='color:#fff'></i> dayah.idami@gmail.com</li>
+            <li><i class='bx bxs-phone' style='color:#fff'></i> +601125411249</li>
+          </div>
+          <div class="contact-icon">
+            <a href="#"><i class='bx bxl-linkedin' style="color: white"></i></a>
+            <a href="https://github.com/ShijiroHikiro"><i class='bx bxl-github' style="color: white"></i></a>
+          </div>
         </div>
-        <div class="contact-icon">
-          <a href="#"><i class='bx bxl-linkedin' style="color: white"></i></a>
-          <a href="https://github.com/ShijiroHikiro"><i class='bx bxl-github' style="color: white"></i></a>
+    
+        <div class="contact-form">
+          <form id="contact-form">
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+            <input type="text" id="subject" placeholder="Enter Your Subject">
+            <textarea id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+            <input type="submit" value="Submit" class="send">
+          </form>
         </div>
-      </div>
-
-      <div class="contact-form">
-        <form id="contact-form">
-          <input type="text" id="name" placeholder="Enter Your Name" required>
-          <input type="email" id="email" placeholder="Enter Your Email" required>
-          <input type="text" id="subject" placeholder="Enter Your Subject">
-          <textarea id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-          <input type="submit" value="Submit" class="send">
-        </form>
-      </div>
-    </section>
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-      import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
-
-      const firebaseConfig = {
-        apiKey: "AIzaSyADO_6l3hMIzfFLxtytFsOAFcoM8ypwhYI",
-        authDomain: "sotm-6b71e.firebaseapp.com",
-        databaseURL: "https://sotm-6b71e.firebaseio.com",
-        projectId: "sotm-6b71e",
-        storageBucket: "sotm-6b71e.appspot.com",
-        messagingSenderId: "625690017569",
-        appId: "1:625690017569:web:5c0cd6817ffe6499c5c860"
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const db = getDatabase(app);
-
-      document.getElementById("contact-form").addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        set(ref(db, "users/" + document.getElementById("name").value), {
-          email: document.getElementById("email").value,
-          subject: document.getElementById("subject").value,
-          message: document.getElementById("message").value
-        })
-          .then(() => {
-            alert("Your message has been sent!");
-            document.getElementById("contact-form").reset();
+      </section>  
+      <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+    
+        const firebaseConfig = {
+          apiKey: "AIzaSyADO_6l3hMIzfFLxtytFsOAFcoM8ypwhYI",
+          authDomain: "sotm-6b71e.firebaseapp.com",
+          databaseURL: "https://sotm-6b71e.firebaseio.com",
+          projectId: "sotm-6b71e",
+          storageBucket: "sotm-6b71e.appspot.com",
+          messagingSenderId: "625690017569",
+          appId: "1:625690017569:web:5c0cd6817ffe6499c5c860"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+    
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+    
+          set(ref(db, "users/" + document.getElementById("name").value), {
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value
           })
-          .catch((error) => {
-            alert("Error: " + error);
-          });
-      });
-    </script>
+            .then(() => {
+              alert("Your message has been sent!");
+              document.getElementById("contact-form").reset();
+            })
+            .catch((error) => {
+              alert("Error: " + error);
+            });
+        });
+      </script>
   </main>
-  <footer class="footer flex justify-center items-center">
+  <footer class="fixed bottom-0 left-0 right-0 flex justify-center items-start p-5 text-sm leading-sm text-white">
     <p>Developed by Hidayah Azmi 2024</p>
-  </footer>
+</footer> 
 </body>
 
 </html>
