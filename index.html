@@ -16,8 +16,7 @@
 </head>
 
 <body>
-  <header
-    class="flex flex-col md:flex-row items-center justify-between py-2 mb-2 sticky top-0 z-10 bg-gradient-to-b from-[#f0ecea] via-[#f0ecea] to-[#f0ecea] md:py-2">
+  <header class="flex flex-col md:flex-row items-center justify-between py-2 mb-4 sticky top-0 z-10 bg-gradient-to-b from-[#f0ecea] via-[#f0ecea] to-[#f0ecea] md:py-2">
     <a href="index.html" class="logo text-black px-8 md:px-32 mb-2 md:mb-0 ">Portfolio</a>
     <ul
       class="flex flex-row justify-between items-center lg:text-lg md:text-md text-sm font-base text-black w-full lg:px-32 px-10">
@@ -28,32 +27,30 @@
       <li class="mb-2 md:mb-0"><a href="contactMe.html" style="--i:5">Contact</a></li>
     </ul>
   </header>
-  <main class="mx-auto w-full flex flex-col items-center px-5 md:px-20 mb-20">
-    <section class="home">
-      <div class="home-img flex justify-center md:justify-start m">
-        <img src="images/IMG_0793-removebg-preview.png" alt="image"
-          class="w-full py-2 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg" />
+  <section class="home mb-8">
+    <div class="home-img flex justify-center md:justify-start">
+      <img src="images/IMG_0793-removebg-preview.png" alt="image" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg" />
+    </div>
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Hidayah Azmi</h1>
+      <h3>And I'm a <span class="text"></span></h3>
+      <p>I am a passionate Software Engineer specializing in both web and mobile development.
+        With devotion to craft elegant and efficient code, I thrive on delivering seamless digital experiences.
+        My expertisement spans within various technologies: <br> <br> Flutter, Python, Web Stack (HTML/CSS/JavaScript).
+      </p>
+      <div class="home-sci">
+        <a href="#" style="--i:9"><i class='bx bxl-linkedin' style="color: white;"></i></a>
+        <a href="https://github.com/ShijiroHikiro" style="--i:10"><i class='bx bxl-github'
+            style="color: white;"></i></a>
       </div>
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Hidayah Azmi</h1>
-        <h3>And I'm a <span class="text"></span></h3>
-        <p>I am a passionate Software Engineer specializing in both web and mobile development.
-          With devotion to craft elegant and efficient code, I thrive on delivering seamless digital experiences.
-          My expertisement spans within various technologies: <br> <br> Flutter, Python, Web Stack
-          (HTML/CSS/JavaScript).
-        </p>
-        <div class="home-sci">
-          <a href="#" style="--i:9"><i class='bx bxl-linkedin' style="color: white;"></i></a>
-          <a href="https://github.com/ShijiroHikiro" style="--i:10"><i class='bx bxl-github'
-              style="color: white;"></i></a>
-        </div>      
-      </div>
-    </section>
-  </main>
-  <footer class="fixed bottom-0 left-0 right-0 flex justify-center items-start p-5 text-sm leading-sm text-white">
+      <a href="aboutme.html" class="btn-box " style="color: black;">More About Me</a>
+    </div>
+  </section>  
+  <footer class="fixed bottom-0 left-0 right-0 flex justify-center items-start p-5 bg-gradient-to-r from-transparent to background bg-radial-pattern bg-radial-sm backdrop-blur-md bg-opacity-20 text-sm leading-sm text-white">
     <p>Developed by Hidayah Azmi 2024</p>
-  </footer>
+  </footer>  
   <script src="main.js"></script>
 </body>
+
 </html>

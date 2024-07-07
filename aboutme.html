@@ -13,6 +13,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,57 +44,124 @@
         <a href="index.html" class="logo text-black px-32 ">Portfolio</a>
         <ul
             class="flex flex-row justify-between items-center lg:text-lg md:text-md text-sm font-base text-black w-full lg:px-32 px-10">
-            <li class="mb-2 md:mb-0 md:mr-6"><a href="index.html" style="--i:1" class="active">Home</a></li>
-            <li class="mb-2 md:mb-0 md:mr-6"><a href="aboutme.html" style="--i:2">About Me</a></li>
-            <li class="mb-2 md:mb-0 md:mr-6"><a href="skills.html" style="--i:3">Skills</a></li>
-            <li class="mb-2 md:mb-0 md:mr-6"><a href="project.html" style="--i:4">Projects</a></li>
-            <li class="mb-2 md:mb-0"><a href="contactMe.html" style="--i:5">Contact</a></li>
+            <li class="mb-2 md:mb-0 md:mr-6 space-x-4 sm:space-x-6"><a href="index.html" style="--i:1"
+                    class="active">Home</a></li>
+            <li class="mb-2 md:mb-0 md:mr-6 space-x-4 sm:space-x-6"><a href="aboutme.html" style="--i:2">About Me</a>
+            </li>
+            <li class="mb-2 md:mb-0 md:mr-6 space-x-4 sm:space-x-6"><a href="skills.html" style="--i:3">Skills</a></li>
+            <li class="mb-2 md:mb-0 md:mr-6 space-x-4 sm:space-x-6"><a href="project.html" style="--i:4">Projects</a>
+            </li>
+            <li class="mb-2 md:mb-0 space-x-4 sm:space-x-6"><a href="contactMe.html" style="--i:5">Contact</a></li>
         </ul>
     </header>
     <main class="mx-auto w-full flex flex-col items-center px-10 md:px-20 mb-20">
-        <h1 class="w-full py-2 underline underline-offset-4 decoration-2 decoration-slate-600">About Me</h1>
-        <section class="w-full text-white mt-4">
-            <p class="text-justify">
-                I'm an individual who enjoys coding and eager to explore the world of tech, which in today's era brings                     technology that is always up-to-date. Apart from coding, I enjoy reading books. The genres that
-                interest me the most are horror, mystery, thrillers, and fantasy. I also play sports such volleyball and badminton
+        <h1 class="w-7/12 py-2 underline underline-offset-4 decoration-2 decoration-slate-600 text-2xl">About Me</h1>
+        <section class="w-7/12 text-white mt-4 md:mx-10 ">
+            <p class="text-justify md:w-full">
+                I'm an individual who enjoys coding and eager to explore the world of tech, which in today's era brings
+                technology that is always up-to-date. Apart from coding, I enjoy reading books. The genres that
+                interest me the most are horror, mystery, thrillers, and fantasy. I also play sports such volleyball and
+                badminton
                 occasionally.
             </p>
-        </section>  
-        
-        <section class="w-full text-left text-white mt-4">            
-                <div class="flex flex-col">                    
-                    <h2 class="underline underline-offset-4 decoration-2 decoration-slate-600 font-medium text-lg">Bio</h2>
-                    <div class="flex flex-col font-light mt-2 space-y-1">
-                        <div class="flex items-start">
-                            <div class="w-24">January, 1998</div>
-                            <div class="flex flex-1 text-pretty">Born in Hospital Besar, Pulau Pinang.</div>
+        </section>
+
+        <section class="w-7/12 text-left text-white mt-4">
+            <div class="flex flex-col">
+                <h2 class="underline underline-offset-4 decoration-2 decoration-slate-600 font-medium text-lg">Bio</h2>
+                <div class="flex flex-col font-light mt-2 space-y-1">
+                    <div class="flex items-start">
+                        <div class="w-24">January, 1998</div>
+                        <div class="flex flex-1 text-pretty">Born in Hospital Besar, Pulau Pinang.</div>
+                    </div>
+                </div>
+                <div class="flex flex-col font-light mt-2 space-y-1">
+                    <div class="flex items-start">
+                        <div class="w-24">August, 2019</div>
+                        <div class="flex flex-1 text-pretty">Successful Graduation from Politeknik Balik Pulau in
+                            Diploma in Information Technology(Network).</div>
+                    </div>
+                </div>
+                <div class="flex flex-col font-light mt-2 space-y-1">
+                    <div class="flex items-start">
+                        <div class="w-24">July, 2023</div>
+                        <div class="flex flex-1 text-pretty">Successful Graduation from Universiti Malaysia Perlis in
+                            Bachelor's Computer Engineering.</div>
+                    </div>
+                </div>
+                <div class="flex flex-col font-light mt-2 space-y-1">
+                    <div class="flex items-start">
+                        <div class="w-24">December, 2023</div>
+                        <div class="flex flex-1 text-pretty">Start Work at Vista Summerose as Software En Engineer.
                         </div>
                     </div>
-                    <div class="flex flex-col font-light mt-2 space-y-1">
-                        <div class="flex items-start">
-                            <div class="w-24">August, 2019</div>
-                            <div class="flex flex-1 text-pretty">Successful Graduation from Politeknik Balik Pulau in Diploma in Information Technology(Network).</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-7/12 text-left text-white mt-4">
+            <div class="flex flex-col">
+                <h2 class="underline underline-offset-4 decoration-2 decoration-slate-600 font-medium text-lg">Achievements</h2>
+                <div class="flex flex-col font-light mt-2 space-y-1">
+                    <div class="overflow-hidden relative">
+                        <div class="gallery flex relative">
+                            <img src="images/fyp.png" class="w-95 object-cover h-50">
+                            <img src="images/black-wallpaper.png" class="w-95 object-cover h-50">
+                            <img src="images/fyp.png" class="w-95 object-cover h-50">
                         </div>
+                        <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full z-10"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg></button>
+                        <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full z-10"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
                     </div>
-                    <div class="flex flex-col font-light mt-2 space-y-1">
-                        <div class="flex items-start">
-                            <div class="w-24">July, 2023</div>
-                            <div class="flex flex-1 text-pretty">Successful Graduation from Universiti Malaysia Perlis in Bachelor's Computer Engineering.</div>
-                        </div>
+                </div>
+                <div id="modal" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden">
+                    <div class="bg-white p-4 rounded">
+                        <button id="closeModal" class="mb-4 text-gray-600">Close</button>
+                        <img id="modalImage" src="" alt="Large Image">
                     </div>
-                    <div class="flex flex-col font-light mt-2 space-y-1">
-                        <div class="flex items-start">
-                            <div class="w-24">December, 2023</div>
-                            <div class="flex flex-1 text-pretty">Start Work at Vista Summerose as Software En Engineer.</div>
-                        </div>
-                    </div>
-                </div>                           
+                </div>
+            </div>
         </section>
         
+        
     </main>
-    <footer class="fixed bottom-0 left-0 right-0 flex justify-center items-start p-5 text-sm leading-sm text-white">
+    <footer
+        class="fixed bottom-0 left-0 right-0 flex justify-center items-start p-5 bg-gradient-to-r from-transparent to background bg-radial-pattern bg-radial-sm backdrop-blur-md bg-opacity-20 text-sm leading-sm text-white">
         <p>Developed by Hidayah Azmi 2024</p>
     </footer>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery img');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+    
+        function showImage(index) {
+            images.forEach((img, idx) => {
+                if (idx === index) {
+                    img.removeAttribute('hidden');
+                } else {
+                    img.setAttribute('hidden', true);
+                }
+            });
+        }
+    
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+    
+        function showPrevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+    
+        nextBtn.addEventListener('click', showNextImage);
+        prevBtn.addEventListener('click', showPrevImage);
+    
+        // Tampilkan gambar pertama saat memuat halaman
+        showImage(currentIndex);
+    
+        setInterval(showNextImage, 3000); // Auto scroll every 3 seconds
+    </script>
+    
 </body>
-
 </html>
